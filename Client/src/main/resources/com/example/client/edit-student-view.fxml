@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #46494C;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.EditStudentView">
+   <children>
+      <TextField fx:id="name" layoutX="208.0" layoutY="63.0" prefHeight="25.0" prefWidth="362.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Редактировать студента" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="budget" layoutX="208.0" layoutY="106.0" mnemonicParsing="false" selected="true" text="бюджетная" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="paid" layoutX="311.0" layoutY="106.0" mnemonicParsing="false" text="платная" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="123.0" layoutY="68.0" text="Имя:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="106.0" text="Форма обучения:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="gpa" layoutX="208.0" layoutY="140.0" />
+      <Label layoutX="62.0" layoutY="145.0" text="Средний балл:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="attendance" layoutX="208.0" layoutY="181.0" />
+      <Label layoutX="60.0" layoutY="186.0" text="Посещаемость:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="sport" layoutX="208.0" layoutY="276.0" mnemonicParsing="false" text="Участие в спортивной деятельности" textFill="#c5c3c6">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="art" layoutX="208.0" layoutY="253.0" mnemonicParsing="false" selected="true" text="Участие в творческой деятельности" textFill="#c5c3c6">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="science" layoutX="208.0" layoutY="231.0" mnemonicParsing="false" text="Участие в научной деятельности" textFill="#c5c3c6">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="orgActivity" layoutX="208.0" layoutY="298.0" mnemonicParsing="false" selected="true" text="Участие в организационной деятельности" textFill="#c5c3c6">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </CheckBox>
+      <Button alignment="CENTER" layoutX="14.0" layoutY="368.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #46494C;" text="Выйти" textAlignment="CENTER" textFill="#c5c3c6" underline="true">
+         <font>
+            <Font name="Arial Bold" size="9.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="488.0" layoutY="355.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #1985A1;" text="Сохранить" textAlignment="CENTER" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

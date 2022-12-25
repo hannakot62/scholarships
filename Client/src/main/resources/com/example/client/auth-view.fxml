@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #46494C;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.AuthView">
+   <children>
+      <Label alignment="CENTER" layoutX="208.0" layoutY="52.0" prefHeight="49.0" prefWidth="184.0" text="Авторизация" textAlignment="CENTER" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="117.0" text="Логин:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login" layoutX="200.0" layoutY="140.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="200.0" layoutY="184.0" text="Пароль:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="200.0" layoutY="206.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="200.0" />
+      <Button fx:id="enterButton" layoutX="200.0" layoutY="295.0" mnemonicParsing="false" onAction="#logIn" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #1985A1;" text="Войти" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginHelp" layoutX="201.0" layoutY="165.0" textFill="#ff2b2b">
+         <font>
+            <Font name="Arial Bold" size="8.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordHelp" layoutX="201.0" layoutY="231.0" textFill="#ff2b2b">
+         <font>
+            <Font name="Arial Bold" size="8.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

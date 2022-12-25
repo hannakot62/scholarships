@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4C5C68;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.AdminPageView">
+   <children>
+      <Button alignment="CENTER" layoutX="61.0" layoutY="130.0" mnemonicParsing="false" onAction="#goToStudentsTable" prefHeight="34.0" prefWidth="479.0" style="-fx-background-color: #46494C;" text="Учётные записи студентов" textFill="#dcdcdd" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="59.66666666666674">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="61.0" layoutY="57.0" text="Выберите, с чем работать:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="60.0" layoutY="183.0" mnemonicParsing="false" onAction="#goToApplications" prefHeight="34.0" prefWidth="479.0" style="-fx-background-color: #46494C;" text="Заявления студентов, жалобы и предложения" textFill="#dcdcdd" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.66666666666674">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="355.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #4C5C68;" text="Выйти" textFill="#c5c3c6" underline="true">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="60.0" layoutY="237.0" mnemonicParsing="false" onAction="#goToDiagram" prefHeight="34.0" prefWidth="479.0" style="-fx-background-color: #46494C;" text="Аналитика размеров получаемых студентами стипендий" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

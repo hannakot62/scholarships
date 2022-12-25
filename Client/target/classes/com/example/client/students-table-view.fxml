@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4C5C68;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.StudentsTableView">
+   <children>
+      <TableView fx:id="studentsTable" layoutY="75.0" prefHeight="249.0" prefWidth="620.0" style="-fx-background-color: #DCDCDD;">
+        <columns>
+          <TableColumn fx:id="fieldName" prefWidth="204.6666818857193" text="Имя" />
+          <TableColumn fx:id="fieldBudgetForm" minWidth="0.0" prefWidth="71.33332824707031" text="Форма об." />
+            <TableColumn fx:id="fieldGPA" prefWidth="54.0" text="Ср. балл" />
+            <TableColumn fx:id="fieldAttendance" prefWidth="48.0" text="Посещ." />
+            <TableColumn fx:id="fieldArt" minWidth="0.0" prefWidth="43.33331298828125" text="Творч." />
+            <TableColumn fx:id="fieldScience" prefWidth="40.0" text="Наука" />
+            <TableColumn fx:id="fieldSport" prefWidth="38.66668701171875" text="Спорт" />
+            <TableColumn fx:id="fieldOrgActivity" prefWidth="41.333282470703125" text="Орг.д." />
+            <TableColumn fx:id="fieldScholarship" prefWidth="76.6666259765625" text="Стипендия" />
+        </columns>
+      </TableView>
+      <Button layoutX="7.0" layoutY="5.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #4C5C68;" text="Выйти" textFill="#dcdcdd" underline="true">
+         <font>
+            <Font name="Arial Bold" size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="210.0" layoutY="30.0" text="Учётные записи студентов" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="345.0" layoutY="362.0" mnemonicParsing="false" onAction="#addStudent" style="-fx-background-color: #1985A1;" text="Добавить" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="426.0" layoutY="362.0" mnemonicParsing="false" onAction="#editStudent" style="-fx-background-color: #46494C;" text="Редактировать" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="539.0" layoutY="362.0" mnemonicParsing="false" onAction="#deleteStudent" style="-fx-background-color: #46494C;" text="Удалить" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="search" layoutX="60.0" layoutY="361.0" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #dcdcdd;" />
+      <Label layoutX="10.0" layoutY="366.0" text="Найти:" textFill="#dcdcdd">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
